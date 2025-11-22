@@ -143,10 +143,15 @@ export default function App() {
               <Rocket className="w-4 h-4" />
               View Projects
             </button>
-            <button onClick={https://topmate.io/tarun_tella} className="px-8 py-3 bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700 font-medium rounded-lg transition-all flex items-center gap-2 backdrop-blur-sm">
+            <a 
+              href="https://topmate.io/tarun_tella"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700 font-medium rounded-lg transition-all flex items-center gap-2 backdrop-blur-sm cursor-pointer"
+            >
               <Mail className="w-4 h-4" />
-              {copied ? "Email Copied!" : "Contact Me"}
-            </button>
+              Contact Me
+            </a>
           </div>
           
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
