@@ -13,75 +13,87 @@ import {
   ChevronDown,
   Code2,
   GraduationCap,
-  Terminal,
   Database,
-  Cpu,
-  Globe
+  Globe,
+  Lock,
+  Zap
 } from 'lucide-react';
 
-// --- PORTFOLIO DATA (UPDATE THIS SECTION) ---
+// --- PORTFOLIO DATA (UPDATED FROM RESUME) ---
 const PORTFOLIO_DATA = {
   personal: {
     name: "Tarun Kumar Tella",
-    role: "Senior Software Engineer",
+    role: "SDE-III",
     company: "ServiceNow",
-    email: "tarun.kumar.tella@example.com", // Update with your actual email
-    linkedin: "https://www.linkedin.com/in/tarun-kumar-tella/",
-    github: "https://github.com/", // Add your GitHub URL
-    resume: "#" // Add link to resume if available
+    email: "tellatarun96@gmail.com", 
+    phone: "+91-6281801981",
+    linkedin: "https://www.linkedin.com/in/tarun-kumar-tella",
+    github: "https://github.com/", // Add your GitHub URL if available
+    location: "Hyderabad, Telangana, India"
   },
   about: {
     title: "The Scientist of Systems",
     philosophy: "My work exists at the intersection of rigid logic and fluid intelligence.",
-    description: "I am a Senior Software Engineer at ServiceNow, specializing in building high-scale, fault-tolerant backend systems while exploring the frontiers of Generative AI. I view software engineering as a dual discipline: the 'Deterministic' art of crafting reliable architectures, and the 'Probabilistic' science of integrating AI agents."
+    description: "Experienced Senior Software Engineer with ~8 years of expertise in architecting and building robust microservices. Specialized in Authn/z systems, Platform services, and high-scale Data processing. I focus on optimizing performance, driving tech debt initiatives, and implementing security best practices while exploring the frontiers of AI."
   },
   experience: [
     {
       company: "ServiceNow",
-      role: "Senior Software Engineer",
-      period: "Present",
-      description: "Architecting and maintaining core platform services that power enterprise workflows. Focusing on high-availability distributed systems, performance optimization, and integrating AI-driven capabilities into the ServiceNow ecosystem. leading technical design reviews and mentoring junior engineers."
+      role: "SDE-III",
+      period: "Sep 2024 - Present",
+      description: "Driving architecture for platform services and transactional systems. resolving critical issues and driving tech debt initiatives to improve code quality and system resilience."
     },
     {
-      company: "Previous Company (e.g., Infosys/Accenture)", // UPDATE ME
-      role: "Software Engineer",
-      period: "2021 - 2023",
-      description: "Developed scalable microservices using Java and Spring Boot. Optimized database queries for high-volume transactions and migrated legacy monoliths to cloud-native architectures on AWS."
+      company: "Tekion Corp",
+      role: "Senior Software Engineer",
+      period: "Mar 2021 - Sep 2024",
+      description: "Owned OMS & Pricing microservices. Reduced high-latency API p95 by 21% via parallelized DB calls. Designed Consumer Login (SSO/SAML) for clients like Honda. Boosted Audit service throughput by 40% by leveraging S3 for event storage and optimizing Kafka partitions."
     },
-    // Add more experience objects here
+    {
+      company: "Bidgely",
+      role: "Senior Software Engineer",
+      period: "Jan 2020 - Mar 2021",
+      description: "Led development of 'Launchpad', a config-driven validation pipeline using Filter design patterns, accelerating client delivery by 25%. Implemented data analytics using AWS Redshift for raw and aggregated insights."
+    },
+    {
+      company: "Bidgely",
+      role: "Software Engineer",
+      period: "Jul 2017 - Jan 2020",
+      description: "Designed features for products reaching millions of users (Emails, Recommendations, AB Testing). Handled end-to-end backend requirements for major utility clients."
+    }
   ],
   education: [
     {
-      degree: "B.Tech in Computer Science", // UPDATE ME
-      school: "IIIT / University Name", // UPDATE ME
-      year: "2017 - 2021",
-      description: "Specialized in Algorithms, Distributed Systems, and Machine Learning."
+      degree: "B.Tech in Electronics and Communication Engineering", 
+      school: "Indian Institute of Technology, Roorkee", 
+      year: "2013 - 2017",
+      description: "Graduated from one of India's premier engineering institutes."
     }
   ],
   skills: [
     {
-      category: "Backend Engineering",
+      category: "Backend & Core",
       icon: Server,
       description: "The Deterministic Core",
-      tech: ["Java", "Spring Boot", "Microservices", "System Design", "Kafka", "Redis"]
+      tech: ["Java", "Spring Boot", "Microservices", "System Design", "Maven/Gradle"]
     },
     {
-      category: "AI & ML",
-      icon: BrainCircuit,
-      description: "The Probabilistic Frontier",
-      tech: ["Python", "PyTorch", "LLMs", "RAG Pipelines", "LangChain", "Vector DBs"]
-    },
-    {
-      category: "Data & Cloud",
+      category: "Data Stores",
       icon: Database,
-      description: "Infrastructure & Storage",
-      tech: ["AWS", "Azure", "PostgreSQL", "MongoDB", "Docker", "Kubernetes"]
+      description: "Persistence & Caching",
+      tech: ["MySQL", "MongoDB", "Cassandra", "Redis", "DynamoDB", "Elasticsearch"]
     },
     {
-      category: "Product & Web",
-      icon: Globe,
-      description: "Full Stack & Strategy",
-      tech: ["React.js", "Next.js", "Node.js", "Product Strategy", "Agile"]
+      category: "Cloud & Eventing",
+      icon: Zap,
+      description: "Scale & Streaming",
+      tech: ["AWS (S3, Lambda, ECS)", "Kafka", "KSQL", "SQS", "Athena", "Redshift"]
+    },
+    {
+      category: "Security & Auth",
+      icon: Lock,
+      description: "Identity Management",
+      tech: ["SSO", "SAML", "OpenID", "Authn/z", "Cryptography"]
     }
   ]
 };
